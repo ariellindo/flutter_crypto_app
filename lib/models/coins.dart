@@ -6,12 +6,16 @@ class Coin extends Equatable {
   final String fullName;
   final double price;
 
+  /// added a const contructor to make
   const Coin({
+    // requires is like the PropTypes in react throw error on missing
+    // with the help of the lib meta.dart
     @required this.name,
     @required this.fullName,
     @required this.price,
   });
 
+  ///
   @override
   List<Object> get props => [
         name,

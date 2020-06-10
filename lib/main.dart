@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_crypto/screens/home_page.dart';
+import 'package:flutter_crypto/screens/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,12 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Crypto Demo',
+      title: 'Flutter Crypto App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+        primaryColor: Colors.black,
+        accentColor: Colors.redAccent[400],
       ),
-      home: MyHomePage(title: 'Flutter Crypto List'),
+      home: HomeScreen(),
     );
   }
 }
